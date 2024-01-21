@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex px-12 py-8 gap-x-32 font-serif h-screen text-[#1e2020] bg-[#f5f1e7];
+  }
+
+  h1 {
+    @apply font-display text-4xl;
+  }
+
+  h2 {
+    @apply font-display font-light text-xl;
+  }
+
+  header {
+    @apply w-80 fixed flex flex-col justify-evenly h-full text-right;
+  }
+
+  main {
+    @apply flex flex-col gap-8 pl-96 h-fit;
+  }
+
+  section {
+    @apply flex flex-col gap-10 justify-center items-center h-screen;
+  }
+
+  nav > ul {
+    @apply flex flex-col gap-8 font-display text-lg;
+  }
+}
+
+@layer components {
+  .active {
+    @apply underline;
+  }
+  
+  .card__exp {
+    @apply flex gap-4;
+  }
+
+  .card__exp_left {
+    @apply basis-1/3;
+  }
+
+  .profile {
+    @apply flex flex-col gap-4;
+  }
+
+  .contacts {
+    @apply flex gap-4 justify-end;
+  }
+}
