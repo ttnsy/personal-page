@@ -7,7 +7,7 @@ module.exports = {
         display: ["Fraunces", "serif"],
         serif: ["DM Sans", "sans-serif"],
       },
-      color: {
+      colors: {
         canvas: {
           50: "#faf7f2",
           100: "#f5f1e7",
