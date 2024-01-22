@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply flex px-12 py-8 gap-x-32 font-serif h-screen text-[#1e2020] bg-canvas-100;
+    @apply font-serif h-screen text-text-900 bg-canvas-100;
   }
 
   h1 {
@@ -59,6 +59,10 @@
 
   .contacts:hover .contact:not(:hover) {
     @apply text-text-300;
+  }
+
+  .text_confetti {
+    @apply cursor-pointer font-bold bg-gradient-to-r from-rose-300 to-primary-600 bg-clip-text hover:from-primary-600 hover:to-indigo-500 text-transparent;
   }
 
   .section__about {
