@@ -495,7 +495,6 @@ main {
 
 section {
   margin-top: 0.25rem;
-  margin-bottom: 16rem;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -652,6 +651,11 @@ nav > ul {
   color: rgb(173 179 178 / var(--tw-text-opacity));
 }
 
+nav a:not(.active) {
+  --tw-text-opacity: 1;
+  color: rgb(173 179 178 / var(--tw-text-opacity));
+}
+
 .text_confetti {
   cursor: pointer;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -773,13 +777,11 @@ nav > ul {
   font-weight: 700;
 }
 
-.section__projects {
-  height: -moz-fit-content;
-  height: fit-content;
+.section__project {
   align-self: flex-start;
 }
 
-.section__project h3::after {
+.section__projects h3::after {
   --tw-content: ' ↗';
   content: var(--tw-content);
 }

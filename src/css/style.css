@@ -28,7 +28,7 @@
   }
 
   section {
-    @apply mt-1 mb-64 flex flex-col gap-10 justify-center items-center h-screen;
+    @apply mt-1 flex flex-col gap-10 justify-center items-center h-screen;
   }
 
   section a {
@@ -58,6 +58,10 @@
   }
 
   .contacts:hover .contact:not(:hover) {
+    @apply text-text-300;
+  }
+
+  nav a:not(.active) {
     @apply text-text-300;
   }
 
@@ -105,11 +109,11 @@
     @apply font-display text-lg font-bold;
   }
 
-  .section__projects {
-    @apply self-start h-fit;
+  .section__project {
+    @apply self-start;
   }
 
-  .section__project h3 {
+  .section__projects h3 {
     @apply after:content-['_↗'];
   }
 
