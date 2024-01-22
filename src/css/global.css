@@ -497,7 +497,7 @@ header {
 section {
   margin-top: 0.25rem;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -783,6 +783,11 @@ nav a:not(.active) {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+}
+
+.section__projects:last-child {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section__project {
