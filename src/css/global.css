@@ -488,15 +488,6 @@ header {
   text-align: right;
 }
 
-main {
-  display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
-  flex-direction: column;
-  gap: 2rem;
-  padding-left: 24rem;
-}
-
 section {
   margin-top: 0.25rem;
   display: flex;
@@ -505,6 +496,12 @@ section {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-left: 24rem;
+  }
 }
 
 section a {

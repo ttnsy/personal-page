@@ -26,13 +26,9 @@
   header {
     @apply w-80 fixed flex flex-col justify-evenly h-full text-right;
   }
-
-  main {
-    @apply flex flex-col gap-8 pl-96 h-fit;
-  }
-
+  
   section {
-    @apply mt-1 flex flex-col gap-10 justify-center items-center h-screen;
+    @apply mt-1 lg:ml-96 flex flex-col gap-10 justify-center items-center h-screen;
   }
 
   section a {
