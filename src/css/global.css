@@ -470,7 +470,15 @@ h2 {
   font-family: Fraunces, serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(105 113 112 / var(--tw-text-opacity));
+}
+
+h3 {
+  font-family: Fraunces, serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
 }
 
 header {
@@ -493,12 +501,24 @@ main {
 }
 
 section {
+  margin-top: 0.25rem;
+  margin-bottom: 16rem;
   display: flex;
   height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+}
+
+/* section:last-child {
+    @apply mt-96 mb-96;
+  } */
+
+section ul {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 nav > ul {
@@ -709,4 +729,25 @@ nav > ul {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+}
+
+.section__project {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.tags__main > li {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 221 206 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(235 124 72 / var(--tw-text-opacity));
+}
+
+.tags__sub > li::after {
+  margin-left: 0.5rem;
+  --tw-content: '•';
+  content: var(--tw-content);
 }

@@ -12,7 +12,11 @@
   }
 
   h2 {
-    @apply font-display font-light text-xl;
+    @apply font-display text-text-500 text-xl;
+  }
+
+  h3 {
+    @apply font-display font-normal text-lg;
   }
 
   header {
@@ -24,7 +28,15 @@
   }
 
   section {
-    @apply flex flex-col gap-10 justify-center items-center h-screen;
+    @apply mt-1 mb-64 flex flex-col gap-10 justify-center items-center h-screen;
+  }
+
+  /* section:last-child {
+    @apply mt-96 mb-96;
+  } */
+
+  section ul {
+    @apply flex gap-2 mt-2;
   }
 
   nav > ul {
@@ -75,5 +87,17 @@
 
   .timeline__item time {
     @apply font-display text-lg font-bold;
+  }
+
+  .section__project {
+    @apply h-fit;
+  }
+
+  .tags__main > li {
+    @apply bg-primary-200 text-primary-500 rounded-full px-2;
+  }
+
+  .tags__sub > li {
+    @apply after:content-['•'] after:ml-2;
   }
 }
