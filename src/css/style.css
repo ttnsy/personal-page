@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply !scroll-smooth;
+  }
+
   body {
     @apply font-serif h-screen text-text-900 bg-canvas-100;
   }
@@ -32,7 +36,7 @@
   }
 
   section a {
-    @apply text-blue-400 hover:text-blue-500;
+    @apply font-bold text-amber-600 hover:text-amber-400;
   }
 
   section ul {
@@ -66,7 +70,7 @@
   }
 
   .text_confetti {
-    @apply cursor-pointer font-bold bg-gradient-to-r from-rose-300 to-primary-600 bg-clip-text hover:from-primary-600 hover:to-indigo-500 text-transparent;
+    @apply cursor-pointer font-bold bg-gradient-to-r from-indigo-300 to-rose-300 bg-clip-text hover:from-rose-300 hover:to-indigo-300 text-transparent;
   }
 
   .section__about {
@@ -120,8 +124,12 @@
   .section__project code {
     @apply bg-primary-100 text-primary-500 rounded px-1.5 text-sm;
   }
-
+  
   .tags > li {
+    @apply font-bold text-text-500;
+  }
+
+  .tags > li:not(:last-child) {
     @apply after:content-['•'] after:ml-2;
   }
 }

@@ -25,6 +25,7 @@ const myCanvas = document.createElement("canvas");
 myCanvas.style.width = "100vw";
 myCanvas.style.height = "100vh";
 myCanvas.style.position = "fixed";
+myCanvas.style.marginLeft = "22%";
 myCanvas.style.inset = 0;
 myCanvas.style.right = 0;
 myCanvas.style.zIndex = -10;
