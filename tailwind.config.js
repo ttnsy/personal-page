@@ -48,6 +48,15 @@ module.exports = {
           950: "#1e2020",
         },
       },
+      animation: {
+        moveline: "moveline 6s linear forwards"
+      },
+      keyframes: {
+        moveline: {
+          "0%": { height: 0 },
+          "100%": { height: "100%" },
+        },
+      },
     },
   },
   plugins: [],

@@ -46,19 +46,31 @@
   }
 
   .timeline {
-    @apply relative border-s border-text-200 max-w-lg;
+    @apply relative max-w-5xl after:content-[''] after:absolute after:w-0.5 after:h-full after:bg-text-200 after:top-0 after:left-1/2 after:animate-moveline;
   }
-
+  
   .timeline__item {
-    @apply mb-10 ms-6;
+    @apply relative mb-10 w-1/2 px-8;
   }
-
+  
   .timeline__item:last-child {
     @apply mb-0;
   }
 
+  .timeline__item_left {
+    @apply left-0 text-right;
+  }
+
+  .timeline__item_right {
+    @apply left-1/2;
+  }
+
   .timeline__bullet {
-    @apply w-6 h-6 bg-primary-200 ring-8 ring-canvas-100 rounded-full absolute mt-1.5 -start-3;
+    @apply w-6 h-6 bg-primary-200 ring-8 ring-canvas-100 rounded-full absolute mt-1.5 -right-3 z-20;
+  }
+
+  .timeline__item_right .timeline__bullet {
+    @apply -left-3;
   }
 
   .timeline__item time {
