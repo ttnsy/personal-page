@@ -24,7 +24,7 @@
   }
 
   header {
-    @apply w-80 fixed flex flex-col justify-evenly h-full text-right;
+    @apply w-80 block md:fixed flex flex-col justify-evenly h-full text-right;
   }
   
   section {

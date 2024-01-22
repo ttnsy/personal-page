@@ -479,13 +479,19 @@ h3 {
 }
 
 header {
-  position: fixed;
+  display: block;
   display: flex;
   height: 100%;
   width: 20rem;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: right;
+}
+
+@media (min-width: 768px) {
+  header {
+    position: fixed;
+  }
 }
 
 section {
