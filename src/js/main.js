@@ -1,3 +1,4 @@
+// Sidebar
 const navLinkEls = document.querySelectorAll(".nav__link");
 const sectionEls = document.querySelectorAll(".section");
 
